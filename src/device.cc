@@ -188,11 +188,12 @@ std::string Device::getFileSystem()
  * Iterate over /dev directory
  * return 0 on success otherwise -1
  */
-int Device::getDevNameFromDevfs()
+int Device::getDevNameFromDevfs(fs::path p)
 {
     struct stat st;
     fs::directory_iterator end_itr; // default construction yields past-the-end
-    for ( fs::directory_iterator it("/dev");
+
+    for ( fs::directory_iterator it(p);
         it != end_itr;
         ++it )
     {
@@ -200,6 +201,10 @@ int Device::getDevNameFromDevfs()
             continue;
         if(lstat(it->path().string().c_str(), &st))
             continue;
+	if(is_directory(it->path()))
+            if(!getDevNameFromDevfs(it->path()))
+                return 0;
+
         if(st.st_rdev == get()->devno && S_ISBLK(st.st_mode))
         {
             get()->devicePath = it->path().string();
@@ -274,11 +279,11 @@ std::string Device::getDeviceName()
     {
         if(!isMountPoint("/dev"))
             throw std::runtime_error("Unknown block device: devfs is not mounted");
-        
-        if(-1 == getDevNameFromDevfs())
+
+        if(-1 == getDevNameFromDevfs("/dev"))
             throw std::runtime_error("Unknown block device: no such device found in /dev");
     }
-    
+
     return get()->deviceName;
 }
 
