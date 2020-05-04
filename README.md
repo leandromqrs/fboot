@@ -60,15 +60,19 @@ The e4rat toolset has the following external dependencies:
 
 The build system is based on CMake, which will generate a Makefile.
 To build the release version of e4rat run the following command:
-    cmake . -DCMAKE_BUILD_TYPE=release
-    make
+    
+    $ mkdir build
+    $ cd build
+    $ cmake .. -DCMAKE_BUILD_TYPE=release
+    $ make
 
 Additianal cmake options:
  CMAKE_INSTALL_PREFIX=<prefix>
  
 Once you have successfully built the source code install e4rat as root:
-    make install
 
+    $ sudo make install
+    
 If you are running a Debian based Linux you can also install e4rat by
 generating a Debian package:
     make package
