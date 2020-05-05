@@ -90,10 +90,10 @@ Config::~Config()
 void Config::load()
 {
     try {
-        if(access("/etc/"PROGRAM_NAME".conf", F_OK))
+        if(access("/etc/" PROGRAM_NAME ".conf", F_OK))
             return;
 
-        read_info("/etc/"PROGRAM_NAME".conf", ptree);
+        read_info("/etc/" PROGRAM_NAME ".conf", ptree);
 #if 0
         BOOST_FOREACH(boost::property_tree::ptree::value_type &v, ptree)
             if(defaultProperty.find(v.first) == defaultProperty.not_found())

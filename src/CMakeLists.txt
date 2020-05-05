@@ -19,7 +19,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
                 OUTPUT_VARIABLE GCC_VERSION)
 
     if(GCC_VERSION VERSION_LESS 4.5)
-        message(WARNING "GCC <4.5 does not support -static-libstdc++")
+        message(WARNING "GCC < 4.5 does not support -static-libstdc++")
 	execute_process(COMMAND stat -c %d /
                         OUTPUT_VARIABLE DEV_ROOT_DIR)
         execute_process(COMMAND stat -c %d /usr

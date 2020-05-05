@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 
 # test weather variables from top level directories are missing
-IF( NOT E4RAT_VERSION )
+IF( NOT E4RATFX_VERSION )
     MESSAGE(FATAL_ERROR "Do not run cmake on subdirectories")
 ENDIF()
 
