@@ -93,7 +93,7 @@ extern Logging logger;
 #define dump_log(...) logger.write(__VA_ARGS__)
 
 #ifdef DEBUG_ENABLED
-    #define debug(format,args...) dump_log(Debug, "%s:%d in %s(): "format, __FILE__, __LINE__, __FUNCTION__, ## args)
+    #define debug(format,args...) dump_log(Debug, "%s:%d in %s(): " format, __FILE__, __LINE__, __FUNCTION__, ## args)
 #else
     #define debug(format,args...)
 #endif

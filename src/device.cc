@@ -29,6 +29,7 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <mntent.h>
+#include <sys/sysmacros.h>
 
 #include <boost/lexical_cast.hpp>
 

@@ -29,6 +29,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <cstring>
+#include <sys/sysmacros.h>
 #include <linux/limits.h>
 #include <fcntl.h>
 

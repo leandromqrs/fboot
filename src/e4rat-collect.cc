@@ -41,6 +41,7 @@
 #include <sys/mman.h>
 #include <sys/prctl.h>
 #include <sys/wait.h>
+#include <sys/sysmacros.h>
 #include <pwd.h>
 
 #include <boost/foreach.hpp>
