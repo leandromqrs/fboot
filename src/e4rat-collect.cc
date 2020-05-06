@@ -53,8 +53,8 @@ bool isAuditDaemonRunning()
     pid_t pid = readPidFile("/var/run/auditd.pid");
     if(pid)
         if(0 == kill(pid, 0))
-            return true;
-    return false;
+            return 0;
+    return 1;
 }
 
 /*
@@ -82,7 +82,7 @@ int system_u(const char* user, const char* command)
                         error("Cannot receive user id: %s", strerror(errno));
                     else
                         error("Unknown username %s", user);
-                    exit(1);
+                    exit(EXIT_FAILURE);
                 }
                 setenv("HOME", pw->pw_dir, 1);
                 if(setuid(pw->pw_uid))
@@ -113,10 +113,10 @@ void scanOpenFiles(std::vector<FilePtr>& list)
     if(NULL == pFile)
         return;
     //skip first line
-    if(NULL == fgets (buffer , PATH_MAX+64, pFile))
+    if(NULL == fgets(buffer , PATH_MAX+64, pFile))
         return; 
 
-    while(NULL != fgets (buffer , PATH_MAX+64, pFile))
+    while(NULL != fgets(buffer , PATH_MAX+64, pFile))
     {
         if(EOF == sscanf(buffer, "%*s%*s%*s%*s%*s %x%*c%x %*s %llu %[^\n]s", &major, &minor, (long long unsigned int*)&ino, path))
         {
