@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
+cmake_policy(SET CMP0050 OLD)
 
 # test weather variables from top level directories are missing
 IF( NOT E4RATFX_VERSION )
