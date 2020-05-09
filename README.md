@@ -5,27 +5,6 @@ on the online defragmentation ioctl EXT4_IOC_MOVE_EXT from the ext4 filesystem,
 which was introduced in Linux Kernel 2.6.31. Therefore, other filesystem types
 or earlier versions of extended filesystems are not supported.
 
-## SAMPLE USAGE: Accelerate the boot process
-
-Run e4rat-collect as init process through adding following line to Kernel
-parameters:
-    init=/sbin/e4rat-collect
-
-After e4rat-collect has terminated the generated file list is stored at:
-    /var/lib/e4rat/startup.log
-
-Before reallocating boot files it is recommaned to switch to runlevel 1 to
-stop most of all running proceses to gain write access to the process binary
-file:
-    init 1
-    
-Reallocating boot files:
-    e4rat-realloc  /var/lib/e4rat/startup.log
-
-To start e4rat-preload as initial process append following to kernel your
-parameters:
-    init=/sbin/e4rat-preload
-
 ## DEPENDENCIES
 
 The e4rat toolset has the following external dependencies:
