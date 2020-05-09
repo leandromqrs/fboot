@@ -5,25 +5,6 @@ on the online defragmentation ioctl EXT4_IOC_MOVE_EXT from the ext4 filesystem,
 which was introduced in Linux Kernel 2.6.31. Therefore, other filesystem types
 or earlier versions of extended filesystems are not supported.
 
-e4rat consists of three binaries. The first is e4rat-collect. Its purpose is to
-gather relevant files by monitoring file accesses during an application startup.
-The generated file list is the fundament of the second step. With the second
-step, e4rat-realloc, files are placed physically in a row on disk.
-The reallocation of the files' content yields a higher disk transfer rate which
-accelerates program start processes.
-
-Third, you can also read-ahead files to gain a higher cache hit rate.
-e4rat-preload transfers files into memory in parallel to program startup.
-
-Because a file consists of file content and its I-Node information the
-preloading process is divided into two steps. First, it reads the I-Nodes'
-information which are still spread over the entire filesystem. In the second
-step, the files' content is read without causing any disk seeks.
-
-For more information see: e4rat-collect(8), e4rat-realloc(8), e4rat-preload(8)
-                          and e4rat.conf(5).
-
-
 ## SAMPLE USAGE: Accelerate the boot process
 
 Run e4rat-collect as init process through adding following line to Kernel
