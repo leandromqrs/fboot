@@ -2,11 +2,11 @@
 
 =head1 NAME
 
-/etc/e4rat.conf - configuration file for the e4rat toolset
+/etc/e4head.conf - configuration file for the e4rat toolset
 
 =head1 DESCRIPTION
 
-B<e4rat.conf> is the configuration file all e4rat binaries. It allows to replace default parameters of the tools.
+B<e4head.conf> is the configuration file of the e4head binary. It allows to replace default parameters of the tools.
 
 =head1 FILE FORMAT
 
