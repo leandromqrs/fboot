@@ -22,11 +22,6 @@
 #ifndef BALLOC_H
 #define BALLOC_H
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif 
-
 #include <linux/types.h>
 #include <linux/limits.h>
 #include <linux/ioctl.h>
@@ -88,7 +83,4 @@ struct ext4_prealloc_list {
     struct ext4_prealloc_info pl_space[0];  /* array of mapped PAs (out) */
 };
 
-#ifdef __cplusplus
-}
-#endif 
 #endif

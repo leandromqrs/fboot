@@ -1,0 +1,10 @@
+# test weather variables from top level directories are missing
+  # message(['FATAL_ERROR', 'Do not run cmake on subdirectories'])
+# add_custom_target(['ManPages', 'ALL'])
+# foreach(['_man', 'e4rat-collect', 'e4rat-realloc', 'e4rat-preload'])
+# add_custom_command(['TARGET', 'ManPages', 'SOURCE', cmake_current_source_dir, '/${_man}.pod', 'COMMAND', 'pod2man', 'ARGS', cmake_current_source_dir, '/${_man}.pod', cmake_current_binary_dir, '/${_man}.8', '--section', '8', '--center', 'User Manuals', '--release', 'e4rat ${E4RAT_VERSION}', 'OUTPUTS', cmake_current_binary_dir, '/${_man}.8'])
+# endforeach('_man')
+# add_custom_command(['TARGET', 'ManPages', 'SOURCE', cmake_current_source_dir, '/e4rat.conf.pod', 'COMMAND', 'pod2man', 'ARGS', cmake_current_source_dir, '/e4rat.conf.pod', cmake_current_binary_dir, '/e4rat.conf.5', '--section', '5', '--center', 'User Manuals', '--release', 'e4rat ${E4RAT_VERSION}', 'OUTPUTS', cmake_current_binary_dir, '/e4rat.conf.5'])
+# add_custom_command(['TARGET', 'ManPages', 'SOURCE', 'ManPages', 'DEPENDS', cmake_current_binary_dir, '/e4rat-collect.8', cmake_current_binary_dir, '/e4rat-realloc.8', cmake_current_binary_dir, '/e4rat-preload.8', cmake_current_binary_dir, '/e4rat.conf.5'])
+# install(['FILES', cmake_current_binary_dir, '/e4rat-collect.8', cmake_current_binary_dir, '/e4rat-realloc.8', cmake_current_binary_dir, '/e4rat-preload.8', 'DESTINATION', man_install_prefix, '/share/man/man8'])
+# install(['FILES', cmake_current_binary_dir, '/e4rat.conf.5', 'DESTINATION', man_install_prefix, '/share/man/man5'])

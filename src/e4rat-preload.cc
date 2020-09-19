@@ -18,7 +18,7 @@
  */
 
 #include "common.hh"
-#include "config.hh"
+#include "config.h"
 #include "logging.hh"
 #include "fiemap.hh"
 #include "parsefilelist.hh"
@@ -138,7 +138,7 @@ int main(int argc, char* argv[])
 {
     flags = 0;
 
-    Config::instance()->load();
+    loadConfig();
 
     int loglevel = Config::get<int>("loglevel");
     int verbose  = Config::get<int>("verbose");
@@ -227,7 +227,7 @@ int main(int argc, char* argv[])
     try {
     if(getpid() == 1)
     {
-        const char* logfile = Config::get<std::string>("startup_log_file").c_str();
+        const char* logfile = "/var/lib/e4rat/startup.log"; //Config::get<std::string>("startup_log_file").c_str();
         notice("Open %s ... ", logfile);
         FILE* infile = fopen(logfile, "r");
         if(!infile)

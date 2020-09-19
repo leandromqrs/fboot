@@ -1,0 +1,33 @@
+;
+; Configuration file for e4rat (reduce access time for ext4 filesystems)
+; if option is not specified. e4rat will use default values.
+;
+; e4rat has a simple logging structure. Each event has a priority bit. The
+; following priorities exist
+;       1   errors
+;       2   warnings
+;       4   task statistics
+;       8   information about a single step
+;      16   debug message
+
+[Global]
+; Specify bit mask of log events written to disk (DEFAULT: 3)
+LogLevel = 3
+
+; Specify default verbosity level (DEFAULT: 7)
+Verbose = 7
+
+; path to init process binary (DEFAULT: /sbin/init)
+Init = "/sbin/init"
+
+; Set target path log events should written to.
+; If log_target is set so 'syslog' messages are send to syslogd.
+; Default value is /dev/kmsg. It sends the messages to kernel's log ring buffer. (See also dmesg(1))
+LogTarget = "/dev/kmsg"
+
+; default path to startup log file (DEFAULT: /var/lib/fboot/startup.log)
+StartupLogFile = "/var/lib/fboot/startup.log"
+
+[Collect]
+; collect only files which device type is ext4 (DEFAULT: 1)
+EXT4Only = 1

@@ -1,0 +1,62 @@
+[
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -MD -MQ 'meson-out/25a6634@@e4head@exe/collect.c.o' -MF 'meson-out/25a6634@@e4head@exe/collect.c.o.d' -o 'meson-out/25a6634@@e4head@exe/collect.c.o' -c ../src/collect.c",
+    "file": "../src/collect.c",
+    "output": "meson-out/25a6634@@e4head@exe/collect.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -MD -MQ 'meson-out/25a6634@@e4head@exe/fileptr.c.o' -MF 'meson-out/25a6634@@e4head@exe/fileptr.c.o.d' -o 'meson-out/25a6634@@e4head@exe/fileptr.c.o' -c ../src/fileptr.c",
+    "file": "../src/fileptr.c",
+    "output": "meson-out/25a6634@@e4head@exe/fileptr.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -MD -MQ 'meson-out/25a6634@@e4head@exe/listener.c.o' -MF 'meson-out/25a6634@@e4head@exe/listener.c.o.d' -o 'meson-out/25a6634@@e4head@exe/listener.c.o' -c ../src/listener.c",
+    "file": "../src/listener.c",
+    "output": "meson-out/25a6634@@e4head@exe/listener.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -MD -MQ 'meson-out/25a6634@@e4head@exe/eventcatcher.c.o' -MF 'meson-out/25a6634@@e4head@exe/eventcatcher.c.o.d' -o 'meson-out/25a6634@@e4head@exe/eventcatcher.c.o' -c ../src/eventcatcher.c",
+    "file": "../src/eventcatcher.c",
+    "output": "meson-out/25a6634@@e4head@exe/eventcatcher.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/ini.c.o' -MF 'meson-out/25a6634@@e4head@sha/ini.c.o.d' -o 'meson-out/25a6634@@e4head@sha/ini.c.o' -c ../src/ini.c",
+    "file": "../src/ini.c",
+    "output": "meson-out/25a6634@@e4head@sha/ini.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/config.c.o' -MF 'meson-out/25a6634@@e4head@sha/config.c.o.d' -o 'meson-out/25a6634@@e4head@sha/config.c.o' -c ../src/config.c",
+    "file": "../src/config.c",
+    "output": "meson-out/25a6634@@e4head@sha/config.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/logging.c.o' -MF 'meson-out/25a6634@@e4head@sha/logging.c.o.d' -o 'meson-out/25a6634@@e4head@sha/logging.c.o' -c ../src/logging.c",
+    "file": "../src/logging.c",
+    "output": "meson-out/25a6634@@e4head@sha/logging.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/common.c.o' -MF 'meson-out/25a6634@@e4head@sha/common.c.o.d' -o 'meson-out/25a6634@@e4head@sha/common.c.o' -c ../src/common.c",
+    "file": "../src/common.c",
+    "output": "meson-out/25a6634@@e4head@sha/common.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/fiemap.c.o' -MF 'meson-out/25a6634@@e4head@sha/fiemap.c.o.d' -o 'meson-out/25a6634@@e4head@sha/fiemap.c.o' -c ../src/fiemap.c",
+    "file": "../src/fiemap.c",
+    "output": "meson-out/25a6634@@e4head@sha/fiemap.c.o"
+  },
+  {
+    "directory": "/home/leandromqrs/Documentos/Programação/Git/e4head/build",
+    "command": "cc -Imeson-out/25a6634@@e4head@sha -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -fPIC -MD -MQ 'meson-out/25a6634@@e4head@sha/device.c.o' -MF 'meson-out/25a6634@@e4head@sha/device.c.o.d' -o 'meson-out/25a6634@@e4head@sha/device.c.o' -c ../src/device.c",
+    "file": "../src/device.c",
+    "output": "meson-out/25a6634@@e4head@sha/device.c.o"
+  }
+]
