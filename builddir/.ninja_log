@@ -1,4 +1,0 @@
-# ninja log v5
-0	873	1600543069477382590	build.ninja	be84f08acbeebc
-2	109	1600543069917372699	src/libfboot.so.p/ini.c.o	dccac1fb85a6ee7c
-7	111	1600543069927372475	src/libfboot.so.p/config.c.o	c1c2cb9c4bf10a4b
