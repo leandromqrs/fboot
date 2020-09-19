@@ -1,6 +1,6 @@
 ## INTRODUCTION
 
-The e4head reduces disk access times through physical file reallocation. It is based
+The fboot reduces disk access times through physical file reallocation. It is based
 on the online defragmentation ioctl EXT4_IOC_MOVE_EXT from the ext4 filesystem,
 which was introduced in Linux Kernel 2.6.31. Therefore, other filesystem types
 or earlier versions of extended filesystems are not supported.
